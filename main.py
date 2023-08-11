@@ -7,7 +7,6 @@ import tools.logos_and_badges as lab
 import warnings
 import streamlit.components.v1 as components
 
-
 st.set_page_config(
     page_title="Lineup Creator App",
     page_icon="👕",
@@ -15,6 +14,13 @@ st.set_page_config(
     # initial_sidebar_state="expanded",
 )
 
+
+hide_github_icon = """
+<style>
+    header .stActionButton .css-ch5dnh.ef3psqc4{ display: none; }
+</style>
+"""
+st.markdown(hide_github_icon,unsafe_allow_html=True)
 
 def get_XI(selected_players):
     players = pd.read_csv("resources/players.csv")
