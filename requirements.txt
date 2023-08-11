@@ -2,4 +2,4 @@ pandas
 matplotlib
 mplsoccer
 streamlit
-PIL
+Pillow
